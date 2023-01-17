@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MY PHUNG TIEU</title>
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+        <script> 
+        function zoomIn() {
+            const elem = document.getElementById("mainImg");
+            if(elem.style.width == '100%'){
+                elem.style.width = '50%';
+                elem.style.border = 'none';
+            }else{
+                elem.style.width = '100%';
+                elem.style.border = '10px solid lavender';
+            }
+            
+        }
+        </script>
+    </head>
+    <body>
+        <div id="mainContainer">
+            <h2>MY PHUNG TIEU</h2>
+            <h3>WELCOME TO MY SITE</h3>
+            <div id="navBar">
+                <nav>
+                    <a class="menu main-menu" href="index.html">HOME</a>
+                    <a class="menu" href="Pages/hobbies.html">HOBBIES</a>
+                    <a class="menu" href="Pages/feedback.html">FEEDBACK</a>
+                </nav>
+            </div>
+            <p> Hello everyone! My name is <b>My Phung Tieu</b><br>
+                In 2019, I moved to Pittsburgh from Vietnam. I like the weather here because it has four season. <br>
+                I'm excited to join Per Scholas where I can improve and learn new skills. 
+                I started to learn programming by watching youtube video and tutorial online. One of the page that I found very useful for me is
+                <a id="text" href="https://www.w3schools.com/">www.w3schools.com</a>. 
+                This website has a lot of simple code examples that are easy to follow and helpful for beginer. 
+            </p>
+            <div class="img-control">
+                <div id="mainImg">
+                    <img src="Images/img.png" style="width:100%" onclick="zoomIn()">
+                </div>
+            </div>
+            <p>I'm an active person who likes spending time exploring and learning new things. Some of my interest are:</p>
+            <ul>
+                <li>Outdoor Activities</li>
+                <li>Photography</li>
+                <li>Enjoy New Food</li>
+                <li>Travel</li>
+            </ul>
+            
+            <p>It's nice to meet you all!</p>
+            <footer>
+                <p id="mark">&copy My Phung Tieu</p>
+            </footer>
+            
+        </div>
+    </body>
+    
+</html>

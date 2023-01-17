@@ -1,0 +1,189 @@
+body{
+    font-size: 18px;
+}
+#mainContainer{
+    width:65%;
+    margin:auto;
+    padding: 1.5em;
+    border: 2px solid rgb(75, 75, 75);
+    font-family: serif;
+    word-spacing: 0.12em;
+    line-height: 1.2em;
+    background-color: #e9ffdec4;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Fredoka One';
+    letter-spacing: 0.05em;
+    font-size: 2.5em;
+    color:rgb(245 102 0);
+}
+
+h3{
+    text-align: center;
+    font-family: 'Finger Paint';
+    font-size: large;
+    padding-bottom: 30px ;
+    color: #626262;
+
+}
+
+h4{
+    font-size: larger;
+    font-family: 'Lucida Sans';
+    font-weight: bold;
+    color:#0060a2;
+
+}
+
+.menu{
+    text-decoration: none;
+    color:rgb(255 143 47);
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: large;
+    margin-right: 3em;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 10px;
+    padding: 0.6em 0.9em;
+    transition-property: background-color;
+    transition-duration: 2s ;
+}
+
+.menu:hover{
+    background-color: rgb(255, 179, 116);
+    color:white;
+}
+
+.menu:focus{
+    background-color: rgb(255, 165, 112);
+    color:white;
+}
+
+.main-menu{
+    background-color: rgb(132, 231, 87);
+    color:white;
+}
+
+nav{
+    margin-bottom:2em;
+}
+
+#mainImg{
+    text-align: center;
+    position: relative;
+    width:50%;
+    transition: width 2s;
+}
+
+.img-control{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    line-height: 1.5em;
+}
+
+li{
+    line-height:2em;
+}
+
+#mark{
+    text-align: center;
+    color:rgb(66, 66, 66);
+    font-weight: bolder;
+    opacity: 0.6;
+}
+    
+
+#text{
+    color: green;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+#text:hover{
+    color:red;
+}
+
+th{
+    background-color: rgb(80, 80, 80);
+    color:white;
+}
+
+table,th,td{
+    border: 1.2px solid rgb(173, 173, 173);
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.ski-img{
+    display: flex;
+    justify-content: center;
+}
+
+.climb-column{
+    display: flex;
+}
+
+.climb-content{
+    border: 1px solid whitesmoke;
+    padding: 0 2em;
+}
+
+.climb-img{
+    position: relative;
+}
+
+.climb-img:hover{
+    border: 3px solid #0060a2;
+
+}
+
+.ski-img1, .ski-img2{
+    margin: 0 2em;
+}
+
+h1{
+    font-family: cursive;
+    margin: 1.2em 0;
+    color:#0060a2;
+}
+
+.title-group{
+    display: flex;
+}
+
+.title-img{
+    display: flex;
+    align-items: center;
+}
+
+label{
+    font-size: larger;
+    font-weight: bold;
+}
+
+input{
+    margin:15px 0 15px 25px;
+}
+
+textarea{
+    box-sizing: border-box;
+    width:100%;
+    border-color: #cfcfcf;
+}
+
+button{
+    font-size: 18px;
+    color: white;
+    background-color: #ffb24b;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+
+
