@@ -1,14 +1,59 @@
+@media screen and (max-width: 550px){
+    
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h2{
+        font-size: 1.7em !important;
+    }
+
+    h1{
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 850px){
+
+    td{
+        font-size: 18px;
+        line-height: 1.5em;
+    }
+
+    .climb-column{
+        flex-flow: column;
+    }
+
+    .ski-img {
+        flex-direction: column;
+        margin-bottom: 1em;
+    }
+
+    .ski-img1{
+        margin: 0.8em 2em;
+    }
+
+    #mainContainer{
+        width: auto !important;
+    }
+
+    .menu{
+        font-size:large !important;
+        margin-right: 0.8em !important;
+    }
+}
+
 body{
     font-size: 18px;
 }
 #mainContainer{
-    width:65%;
+    width:80%;
     margin:auto;
     padding: 1.5em;
     border: 2px solid rgb(75, 75, 75);
     font-family: serif;
     word-spacing: 0.12em;
-    line-height: 1.2em;
+    line-height: 1.3em;
     background-color: #e9ffdec4;
 }
 
@@ -42,7 +87,7 @@ h4{
     color:rgb(255 143 47);
     font-weight: bold;
     font-family: sans-serif;
-    font-size: large;
+    font-size: larger;
     margin-right: 3em;
     border: 1px solid rgb(231, 231, 231);
     border-radius: 10px;
