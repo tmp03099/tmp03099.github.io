@@ -1,0 +1,182 @@
+body{
+    background-color: #A8E6CF;
+    font-size: medium;
+    font-family: serif;
+    width:80%;
+    line-height: 1.7;
+    margin: auto;
+    border: 1px dashed white;
+}
+
+main{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+h1{
+  text-align: center;
+  color: #b38f48;
+  text-shadow: 3px -1px rgb(8 154 177);
+  font-weight: bolder;
+  font-size: 4em;
+}
+
+h2{
+  color:rgb(163 171 46);
+  font-size: 2em;
+  font-weight: bolder;
+  margin: 10px 0;
+}
+
+.describe {
+  margin: 0 100px;
+  text-align: center;
+  background-color: #DCEDC1;
+  font-size: 20px;
+  color: #5e540a;
+}
+
+/* side */
+
+.side-section{
+  border-right: 5px double #FFD3B6;
+  margin: 20px;
+  border-top: 8px;
+  padding: 20px;
+}
+    
+/* prep icon */
+
+.cook-img{
+  width:20px;
+}
+
+/* list */
+
+.list-none{
+  list-style: none;
+}
+
+li{
+  font-size: larger;
+}
+
+.ingredient-list{
+  list-style-type: circle;
+}
+
+/* notes section */
+
+.notes{
+  color:#ec4d45;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.logo-section{
+  margin:30px 0 0 20px;
+}
+
+#logo-img{
+  width:200px;
+  border:4px dashed white;
+  border-radius:100%;
+  animation: spin 5s infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* main section */
+
+.main-section{
+  border-bottom: 5px double #FFD3B6;
+  border-right: 8px double #FFD3B6;
+  padding: 20px;
+}
+
+.content-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* flip box img */
+
+#main-img{
+  width: 100%;
+  height: 250px;
+  border: 5px ridge #b38f48;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#back-img{
+  width: 100%;
+  height: 250px;
+  border: 5px ridge #b38f48;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.flip-box{
+  width: 50%;
+  height: 250px;
+  perspective: 1000px;
+  margin-bottom: 50px;
+}
+
+.flip-box-inner {
+  background-color: transparent;
+  position: relative;
+  width:100%;
+  height:100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box-back, .flip-box-front{
+  position: absolute;
+  width:100%;
+  height:100%;
+  backface-visibility: hidden;
+  
+}
+
+.flip-box:hover .flip-box-inner{
+  transform: rotateX(180deg);
+}
+
+.flip-box-back {
+  transform: rotateX(180deg);
+}
+
+/* navigate link */
+  
+a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2f9daf;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+#click-me{
+  width:70px;
+  border-radius: 100%;
+}
+  
+#click-me:hover{
+  border:  3px outset rgb(237, 255, 72);
+}
+
+ol, ul{
+  margin-top: 5px;
+}
+  
+  
