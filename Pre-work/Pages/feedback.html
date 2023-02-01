@@ -13,9 +13,11 @@
         </script>
     </head>
     <body>
-        <div id="mainContainer">
-            <h2>MY PHUNG TIEU</h2>
-            <h3>WELCOME TO MY SITE</h3>
+        <div id="headerContainer">
+            <header>
+                <h2>MY PHUNG TIEU</h2>
+                <h3>WELCOME TO MY SITE</h3>
+            </header>
             <div id="navBar">
                 <nav>
                     <a class="menu" href="../index.html">HOME</a>
@@ -23,45 +25,47 @@
                     <a class="menu main-menu" href="feedback.html">FEEDBACK</a>
                 </nav>
             </div>
-            <div id="feedbackForm">
-                <div class="title-group">
-                    <div class="title-img">
-                        <img src="../Images/img.png" width="80px;">
-                    </div>
-                    <div>
-                        <h1>YOUR FEEDBACK PLEASE</h1>
-                    </div>
-                    
-                </div>
-
-                <form>
-                    <div>
-                        <label>Is this your first time to visit my website?</label><br>
-                        <input type="radio" name="first" value="yes">Yes <br>
-                        <input type="radio" name="first" value="no">No 
-                    </div>
-                    <div>
-                        <label>Do you like this website?</label><br>
-                        <input type="radio" name="like" value="yes">Yes <br>
-                        <input type="radio" name="like" value="no">No 
-                    </div>
-                    <div>
-                        <label>Does this help you know a little bit about me?</label><br>
-                        <input type="radio" name="know" value="yes">Yes <br>
-                        <input type="radio" name="know" value="no">No 
-                    </div>
-                    <div>
-                        <label>Any think you would like to share?</label><br><br>
-                        <textarea type="box" name="place-box" placeholder="Please enter here!"
-                        rows="10" cols="50"></textarea>
-                    </div>
-                    <button type="button" onclick="submitFunction()">Submit</button>
-                </form>
-
-            </div>
-            <footer>
-                <p id="mark">&copy My Phung Tieu</p>
-            </footer>
         </div>
+
+        <div id="feedbackForm">
+            <div class="fristContainer">
+                <div class="title-img">
+                    <img src="../Images/img.png" width="80px;">
+                </div>
+                <div>
+                    <h1>YOUR FEEDBACK PLEASE</h1>
+                </div>
+                
+            </div>
+
+            <form class="secondContainer">
+                <div>
+                    <label>Is this your first time to visit my website?</label><br>
+                    <input type="radio" name="first" value="yes">Yes <br>
+                    <input type="radio" name="first" value="no">No 
+                </div>
+                <div>
+                    <label>Do you like this website?</label><br>
+                    <input type="radio" name="like" value="yes">Yes <br>
+                    <input type="radio" name="like" value="no">No 
+                </div>
+                <div>
+                    <label>Does this help you know a little bit about me?</label><br>
+                    <input type="radio" name="know" value="yes">Yes <br>
+                    <input type="radio" name="know" value="no">No 
+                </div>
+                <div>
+                    <label>Any think you would like to share?</label><br><br>
+                    <textarea type="box" name="place-box" placeholder="Please enter here!"
+                    rows="10" cols="50"></textarea>
+                </div>
+                <button type="button" onclick="submitFunction()">Submit</button>
+            </form>
+
+        </div>
+
+        <footer>
+            <p id="mark">&copy My Phung Tieu</p>
+        </footer>
     </body>
 </html>

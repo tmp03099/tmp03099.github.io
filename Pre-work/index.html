@@ -5,25 +5,28 @@
         <link rel="stylesheet" type="text/css" href="CSS/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script> 
         function zoomIn() {
             const elem = document.getElementById("mainImg");
             if(elem.style.width == '100%'){
-                elem.style.width = '50%';
-                elem.style.border = 'none';
+                elem.style.width = '200%';
+                elem.style.border = '3px solid lavender';
             }else{
                 elem.style.width = '100%';
-                elem.style.border = '10px solid lavender';
+                elem.style.border = '3px solid lavender';
             }
             
         }
         </script>
     </head>
     <body>
-        <div id="mainContainer">
-            <h2>MY PHUNG TIEU</h2>
-            <h3>WELCOME TO MY SITE</h3>
+        <div id="headerContainer">
+            <header>
+                <h2>MY PHUNG TIEU</h2>
+                <h3>WELCOME TO MY SITE</h3>
+            </header>
             <div id="navBar">
                 <nav>
                     <a class="menu main-menu" href="index.html">HOME</a>
@@ -31,32 +34,70 @@
                     <a class="menu" href="Pages/feedback.html">FEEDBACK</a>
                 </nav>
             </div>
-            <p> Hello everyone! My name is <b>My Phung Tieu</b><br>
-                In 2019, I moved to Pittsburgh from Vietnam. I like the weather here because it has four season. <br>
-                I'm excited to join Per Scholas where I can improve and learn new skills. 
-                I started to learn programming by watching youtube video and tutorial online. One of the page that I found very useful for me is
-                <a id="text" href="https://www.w3schools.com/">www.w3schools.com</a>. 
-                This website has a lot of simple code examples that are easy to follow and helpful for beginer. 
-            </p>
-            <div class="img-control">
-                <div id="mainImg">
-                    <img src="Images/img.png" style="width:100%" onclick="zoomIn()">
-                </div>
-            </div>
-            <p>I'm an active person who likes spending time exploring and learning new things. Some of my interest are:</p>
-            <ul>
-                <li>Outdoor Activities</li>
-                <li>Photography</li>
-                <li>Enjoy New Food</li>
-                <li>Travel</li>
-            </ul>
-            
-            <p>It's nice to meet you all!</p>
-            <footer>
-                <p id="mark">&copy My Phung Tieu</p>
-            </footer>
-            
         </div>
+        <main>
+            <section class="fristContainer">
+                <div class="img-control">
+                    <div id="mainImg">
+                        <img src="Images/img.png" style="width:100%" onclick="zoomIn()">
+                    </div>
+                    <div id="info">
+                        <a href="https://www.linkedin.com/in/my-phung-tieu-0bba22219/">LinKedIn</a>
+                        <a href="https://github.com/tmp03099">GitHub</a>
+                    </div>
+                </div>
+                <div class="content-section">
+                    <p> Hello everyone! My name is <b>My Phung Tieu</b><br>
+                        In 2019, I moved to Pittsburgh from Vietnam. I had Bachelor's degree in Accounting in Vietnam.
+                        When I came to United States, I had an opportunity that I pursued to Software Developer. 
+                        Finally, I got a Master's degree of Science in Web and Mobile Developer at Robert Morris University.<br>
+                        I'm excited to join Per Scholas where I can improve and learn new skills. 
+                    </p>
+                </div>
+            </section>
+
+            <section class="secondContainer">
+                <h3>PROGRAMMING LANGUAGES</h3>
+                <table>
+                    <tr>
+                        <th><i class="fab fa-java"></i></th>
+                        <th><i class="fab fa-node-js"></i></th>
+                        <th><i class="fab fa-windows"></i></th>
+                    </tr>
+                    <tr>
+                        <th><i class="fab fa-js"></i></th>
+                        <th><i class="fab fa-react"></i></th>
+                        <th><i class="fab fa-linux"></i></th>
+                    </tr>
+                    <tr>
+                        <th><i class="fas fa-file-code"></i></th>
+                        <th><i class="fab fa-html5"></i></th>
+                        <th><i class="fab fa-apple"></i></th>
+                    </tr>
+                    <tr>
+                        <th><i class="fab fa-css3-alt"></i></th>
+                        <th><i class="fab fa-angular"></i></th>
+                        <th><i class="fas fa-database"></i></th>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="thirdContainer">
+                <p>I'm an active person who likes spending time exploring and learning new things. Some of my interest are:</p>
+                <ul>
+                    <li>Outdoor Activities</li>
+                    <li>Photography</li>
+                    <li>Enjoy New Food</li>
+                    <li>Travel</li>
+                </ul>
+                
+                <p>It's nice to meet you all!</p>
+            </section>
+        </main>
+
+        <footer>
+            <p id="mark">&copy My Phung Tieu</p>
+        </footer>
     </body>
     
 </html>

@@ -12,26 +12,10 @@
     h1{
         font-size: 1.2em;
     }
+
+    
 }
 @media screen and (max-width: 850px){
-
-    td{
-        font-size: 18px;
-        line-height: 1.5em;
-    }
-
-    .climb-column{
-        flex-flow: column;
-    }
-
-    .ski-img {
-        flex-direction: column;
-        margin-bottom: 1em;
-    }
-
-    .ski-img1{
-        margin: 0.8em 2em;
-    }
 
     #mainContainer{
         width: auto !important;
@@ -41,20 +25,44 @@
         font-size:large !important;
         margin-right: 0.8em !important;
     }
+
 }
 
+@media screen and (min-width: 851px){
+
+    .outdoor-img{
+        display: flex;
+        align-items: center;
+    }
+
+    .video-container{
+        width:600px;
+    }
+
+    .outdoor-text{
+        margin: 0 30px;
+        width: 70%;
+    }
+
+}
+
+/* homepage */
 body{
     font-size: 18px;
+    word-spacing: 0.12em;
+    line-height: 1.3em;
 }
-#mainContainer{
+
+#headerContainer{
     width:80%;
     margin:auto;
     padding: 1.5em;
-    border: 2px solid rgb(75, 75, 75);
     font-family: serif;
-    word-spacing: 0.12em;
-    line-height: 1.3em;
-    background-color: #e9ffdec4;
+    background-color: #2B3A55;
+}
+
+nav{
+    margin-bottom:2em;
 }
 
 h2{
@@ -74,13 +82,6 @@ h3{
 
 }
 
-h4{
-    font-size: larger;
-    font-family: 'Lucida Sans';
-    font-weight: bold;
-    color:#0060a2;
-
-}
 
 .menu{
     text-decoration: none;
@@ -111,29 +112,91 @@ h4{
     color:white;
 }
 
-nav{
-    margin-bottom:2em;
+/* firstContainer */
+
+.fristContainer{
+    display: flex;
+    align-items: center;
+    width:80%;
+    margin:auto;
+    font-family: serif;
+    padding: 1.5em;
+    background-color: #CE7777;
 }
 
 #mainImg{
     text-align: center;
     position: relative;
-    width:50%;
+    width:100%;
     transition: width 2s;
+    border: 3px solid lavender;
+    border-radius: 100%;
 }
 
-.img-control{
-    display: flex;
-    justify-content: center;
+#info{
+    margin-top: 20px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    padding: 0 5px;
+}
+
+.content-section{
+    padding: 0 10px 0 50px;
+}
+
+li{
+    line-height: 2.5em;
+}
+
+/* secondContainer */
+.secondContainer{
+    width:80%;
+    margin:auto;
+    font-family: serif;
+    padding: 1.5em;
+    background-color: #E8C4C4;
+}
+
+table,th,td{
+    border: 3px double rgb(173, 173, 173);
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table{
+    width:70%;
+    margin: auto;
+}
+
+th{
+    background-color: #626262;
+    color:white;
+    padding:10px;
+}
+
+
+i{
+    font-size: 50px;
+}
+
+/* thirdContainer */
+.thirdContainer{
+    width:80%;
+    margin:auto;
+    font-family: serif;
+    padding: 1.5em;
+    background-color: #F2E5E5;
 }
 
 p{
     line-height: 1.5em;
 }
 
-li{
-    line-height:2em;
-}
+/* footer */
 
 #mark{
     text-align: center;
@@ -143,53 +206,112 @@ li{
 }
     
 
-#text{
-    color: green;
-    text-decoration: none;
-    font-weight: bolder;
+/* Page2 */
+
+h4{
+    font-size: X-LARGE;
+    font-family: 'Lucida Sans';
+    font-weight: bold;
+    color: #2B3A55;
+    text-align: center;
+
 }
 
-#text:hover{
-    color:red;
+/* outdoor */
+#unflex-section{
+    flex-flow: column;
 }
 
-th{
-    background-color: rgb(80, 80, 80);
-    color:white;
+.outdoor-img{
+    border: 4px double white;
+    padding: 20px;
 }
 
-table,th,td{
-    border: 1.2px solid rgb(173, 173, 173);
-    border-collapse: collapse;
+
+
+
+
+/* Travel */
+.layout-photo-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.layout-img {
+    height: 25vh;
+    flex-grow: 1;
+    list-style: none;
+}
+
+li > img{
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+
+} 
+
+/* food */
+
+#food-page{
+    display: flex;
+    align-items: center;
     text-align: center;
 }
 
-.ski-img{
-    display: flex;
+.food-title{
+    width:30%;
+}
+
+.food-img-container{
+    position: relative;
+    display:flex;
+    width:100%;
+    margin:20px;
     justify-content: center;
 }
 
-.climb-column{
-    display: flex;
+
+.img-circle{
+    position: absolute;
+    max-width: 100%;
+    display: block;
+    margin: auto;
 }
 
-.climb-content{
-    border: 1px solid whitesmoke;
-    padding: 0 2em;
-}
-
-.climb-img{
+.img1{
     position: relative;
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 100%;
+    width:300px;
+    height:295px;
+
 }
 
-.climb-img:hover{
-    border: 3px solid #0060a2;
+.img2{
+    position: relative;
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 100%;
+    width:300px;
+    height:295px;
+    left:-70px;
 
 }
 
-.ski-img1, .ski-img2{
-    margin: 0 2em;
+.img3{
+    position: relative;
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 100%;
+    width:300px;
+    height:295px;
+    left:-125px;
 }
+
+/* 
+Feeback page */
 
 h1{
     font-family: cursive;

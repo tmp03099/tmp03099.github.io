@@ -5,142 +5,114 @@
         <link rel="stylesheet" type="text/css" href="../CSS/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body>
-        <div id="mainContainer">
-            <h2>MY PHUNG TIEU</h2>
-            <h3>WELCOME TO MY SITE</h3>
+        <div id="headerContainer">
+            <header>
+                <h2>MY PHUNG TIEU</h2>
+                <h3>WELCOME TO MY SITE</h3>
+            </header>
             <div id="navBar">
                 <nav>
-                    <a class="menu"  href="../index.html">HOME</a>
-                    <a class="menu main-menu" class="main-menu" href="hobbies.html">HOBBIES</a>
+                    <a class="menu" href="../index.html">HOME</a>
+                    <a class="menu main-menu" href="hobbies.html">HOBBIES</a>
                     <a class="menu" href="feedback.html">FEEDBACK</a>
                 </nav>
             </div>
-            <div class="content-container">
-                <div class="travel-container">
-                    <h4>TRAVELLING</h4>
-                    <p> One of my favorite hobby is travelling. When given the opportunity, I always like to explore new city.
-                    I like to explore and learn their culture, history and food. The following are some cities that I visited.</p>
-                    <div style="overflow-x:auto">
-                        <table style="width:100%;">
-                            <tr>
-                                <th></th>
-                                <th>City</th>
-                                <th>When</th>
-                                <th>How Long</th>
-                                <th>Food</th>
-                                <th>Note</th>
-                            </tr>
-                            <tr>
-                                <th rowspan="2">Thailand</th>
-                                <td>Bangkok</td>
-                                <td>2017</td>
-                                <td>5 Days</td>
-                                <td>Amazing, diverse and spicy street food</td>
-                                <td>People are very friendly, food is cheap and good for first time traveler</td>
-                            </tr>
-                            <tr>
-                                <td>Phuket</td>
-                                <td>2019</td>
-                                <td>5 Days</td>
-                                <td>Seafood are fresh</td>
-                                <td>The sea is gorgeous, wonderful. The tourist friendly city</td>
-                            </tr>
-                            <tr>
-                                <th>Malaysia</th>
-                                <td>Pennang</td>
-                                <td>2018</td>
-                                <td>5 Days</td>
-                                <td>Delicious chinese food</td>
-                                <td>The city is a combination of morden and traditional culture. It's full of street art</td>
-                            </tr>
-                            <tr>
-                                <th rowspan="5">US</th>
-                                <td>Oklahoma & Missouri</td>
-                                <td>2019</td>
-                                <td>5 Days</td>
-                                <td>Family food is always good</td>
-                                <td>Visting relatives, first experiences of a American small town</td>
-                            </tr>
-                            <tr>
-                                <td>New York</td>
-                                <td>2021</td>
-                                <td>2 Days</td>
-                                <td>Affordable in Chinatown, enjoyed all kind of Dumpling</td>
-                                <td>Visiting the big apple and biggest Chinatown</td>
-                            </tr>
-                            <tr>
-                                <td>DC</td>
-                                <td>2021</td>
-                                <td>4 Days</td>
-                                <td>My favorite place for Vietnamses food</td>
-                                <td>Spend all day in museums and explore the national mall</td>
-                            </tr>
-                            <tr>
-                                <td>San Diego</td>
-                                <td>2021</td>
-                                <td>6 Days</td>
-                                <td>The best seafood I ever have</td>
-                                <td>Amazing weather with beautiful beaches and explore hidden paths</td>
-                            </tr>
-                            <tr>
-                                <td>Columbus</td>
-                                <td>2022</td>
-                                <td>5 Days</td>
-                                <td>Amazing Japanese food</td>
-                                <td>First time visit western Ohio, very nice city and good food</td>
-                            </tr>
-                        </table>
-
+        </div>
+        <main class="content-container">
+            <div id="unflex-section" class="fristContainer">
+                <h4>OUTDOOR ACTIVITES</h4>
+                <div class="row-section">
+                    <div class="outdoor-img">
+                        <p class="outdoor-text">Skiing is my favorite activity in the winter. 
+                            Skiing help me to challenges myself to become a stronger person,
+                            overcome the scare of height and enjoying the wonderful landscape 
+                            when I'm at the top of the mountain.
+                        </p>
+                        <div class="video-container">
+                            <iframe width="100%" height="300px" src="https://www.youtube.com/embed/tgBnE8eYc8s?start=24"
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                                encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                            </iframe>
+                        </div>
                     </div>
-                </div>
-                <div class="ski-container">
-                    <h4>SKIING</h4>
-                    <p>Skiing is my favorite activity in the winter. Skiing help me to challenges myself to become a stronger person,
-                     overcome the scare of height and enjoying the wonderful landscape when I'm at the top of the mountain.
-                     These are some tutorial video to help you start skiing.
-                    </p>
-                    <div class="ski-img">
-                        <div class="ski-img1">
-                            <iframe width="100%" height="310" src="https://www.youtube.com/embed/tgBnE8eYc8s?start=24"
+                    <div  class="outdoor-img">
+                        <p class="outdoor-text">Tennis is my best choice in summer. I learned from my friend and can play it after a month.
+                            Tennis is good excersice and team enviroment. 
+                        </p>
+                        <div class="video-container">
+                            <iframe width="100%" height="300px" src="https://www.youtube.com/embed/WgmzdLQ4hdQ?start=60"
                              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
                              encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
                             </iframe>
                         </div>
-                        <div class="ski-img2">
-                            <iframe width="100%" height="310" src="https://www.youtube.com/embed/n-UBie4Ioqo?start=19" 
-                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-                            encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </div>
+                    <div class="outdoor-img">
+                        <p class="outdoor-text">Rock Climbing is a sport I really wanted to try when I lived in Vietnam. 
+                            Climbing is really fun and never boring. They often set up routes on the walls 
+                            and change them every month. They have many routes with different level for you 
+                            to challenges yourselft. 
+                            There are so many skills to acquire to train your body and mind. It's perfect for explorer.
+                        </p>
+                        <div class="video-container">
+                            <iframe width="100%" height="300px" src="https://www.youtube.com/embed/8k1tVuC0rPA" 
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                             encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
                             </iframe>
                         </div>
                     </div>
                 </div>
-                
-                <div class="climb-container">
-                    <h4>ROCK CLIMBING</h4>
-                    <div class="climb-column">
-                        <div class="climb-img">
-                            <a href="https://www.ascendclimbing.com/">
-                                <img src="../Images/rock-wall-climbing-1200x630.jpg" alt="Climbing" style="width:100%; height:100%;">
-                            </a>
-                        </div>
-                        <div class="climb-content">
-                            <p>Rock Climbing is a sport I really wanted to try when I lived in Vietnam. 
-                                Climbing is really fun and never boring. For indoor climbing, they set up and 
-                                routes on the walls and change them every month. They have many routes with different level for you 
-                                to challenges yourselft. For Outdoor, you challenges yourself at many different mountain or rock around the world.
-                                There are so many skills to acquire to train your body and mind. It's perfect for explorer.
-                            </p>
-                        </div>
-                    </div>
+            </div>
+
+            <div class="secondContainer">
+                <h4>TRAVEL</h4>
+                <div class="layout-photo">
+                    <ul class="layout-photo-list">
+                        <li class="layout-img"><img src="../Images/20210626_141806-EFFECTS.jpg"></li>
+                        <li class="layout-img"><img src="../Images/20210626_144758.jpg"></li>
+                        <li class="layout-img"><img src="../Images/20210626_151633.jpg"></li>
+                        <li class="layout-img"><img src="../Images/20220106_111232.jpg"></li>
+                        <li class="layout-img"><img src="../Images/20220106_140006.jpg"></li>
+                        <li class="layout-img"><img src="../Images/20220106_141024.jpg"></li>
+                        <li class="layout-img"><img src="../Images/20220106_145227.jpg"></li>
+                        <li class="layout-img"><img src="../Images/20220106_164125.jpg"></li>
+                        <li class="layout-img"><img src="../Images/20220108_161650.jpg"></li>
+                        <li class="layout-img"><img src="../Images/20220109_162052.jpg"></li>
+                        <li class="layout-img"><img src="../Images/20221022_150554.jpg"></li>
+                        <li class="layout-img"><img src="../Images/20221022_152820.jpg"></li>
+                    </ul>
+                    
                 </div>
             </div>
-            <footer>
-                <p id="mark">&copy My Phung Tieu</p>
-            </footer>
-        </div>
+            
+            <div class="thirdContainer" id="food-page">
+                <div class="food-title">
+                    <h4>ENJOY DIFFERENT KIND OFF FOOD</h4>
+                </div>
+                <div class="food-img-container">
+                    <div class="food-img img1">
+                        <img class="img-circle" src="../Images/noodle.png">
+                    </div>
+                    <div class="food-img img2">
+                        <img class="img-circle" src="../Images/korean.jpg">
+                    </div>
+                    <div class="food-img img3">
+                        <img class="img-circle" src="../Images/dimsum.jpg">
+                    </div>
+                </div>
+               <!-- <div class="food-img">
+                    <img class="foodie-img" src="https://w7.pngwing.com/pngs/342/362/png-transparent-ramen-japanese-cuisine-menma-yaki-udon-ramen-thumbnail.png">
+                    <img class="foodie-img" src="https://banner2.cleanpng.com/20180218/xrq/kisspng-dim-sum-cantonese-cuisine-chinese-cuisine-paper-br-crab-dumpling-5a8a1ee84aa5f8.5959297115190013203058.jpg">
+                    <img class="foodie-img" src="https://e7.pngegg.com/pngimages/524/882/png-clipart-bento-bulgogi-bibimbap-korean-cuisine-yaki-udon-restaurant-food-food-recipe.png">
+               </div> -->
+            </div>
+        </main>
+        <footer>
+            <p id="mark">&copy My Phung Tieu</p>
+        </footer>
     </body>
         
 </html>
